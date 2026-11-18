@@ -1,0 +1,160 @@
+Python: Python is a high-level, object oriented ,dynamically typed, interpreted scripting language, as well as programming language.
+
+High-level language : it's a human readable language
+Object oriented language : it supports classes and objects
+Dynamically typed language : the type of variable decided during runtime
+Interpreted scripting language : line by line interpretation take place. The code will be executed until the interpreter reaches the line with error.
+Programming language : will be compiled. If there is a one line error, the rest of the code will not executed.
+
+Runtime: the time taken by the machine to execute the program.
+Compile time: the time taken by the compiler to compile the program
+-------------------------------------------------------------------------------------------------------------------------
+1.variable : variable is a name given to memory location
+2.identifiers : names used in program to identify class,function,variable,object,etc
+3.Keywords : predefined words which has its own meaning
+-------------------------------------------------------------------------------------------------------------------------
+4.rules of identifiers:
+*identifiers are alphanumeric. 
+example : num1 = 1
+*Keywords are not allowed. 
+example: random,def,class,etc..
+*special characters(!@#$%^&*()) are not allowed except underscore(_). 
+example : class_name
+*identifiers should not start with numbers. 
+example : 1num,2age,etc...
+-------------------------------------------------------------------------------------------------------------------------
+5.output statement:
+*print() is known as output statement.
+*syntax:  
+print(*values,sep='str/default:space',end='str/default:\n') 
+*example:
+print(10,20,30,40,50,60,sep='-')  //10-20-30-40-50-60
+-------------------------------------------------------------------------------------------------------------------------
+6.input statement:
+*used to take dynamic / user input from user.
+*syntax : 
+input(msg)
+*example:
+input('enter number:')    //enter number:10
+*note:
+Input statement is designed in such a way that it takes inputs in the form of string. So to overcome this, we have to perform typecasting also called as type conversion.
+-------------------------------------------------------------------------------------------------------------------------
+7.type():type() is a built-in function, that returns the type of data stored in variable
+*syntax:
+type(variable)
+*example:
+a = 10
+print(a,type(a)).  //10 <class,'int'>
+-------------------------------------------------------------------------------------------------------------------------
+8. Type casting / type conversion:
+*Type casting is the process of converting one data type into another data type.
+*There are 2 types of casting:
+i. Implicit type casting: it's a process where Python interpreter convert one data type into another data type .automatically
+*example : 
+a = 10
+b = 2.5
+c = a+b
+print(c,type(c)) //12.5 <class,'float'>
+
+ii. Explicit tape casting: it's a process where user forcefully convert on data type into another data type.
+*syntax:
+var_name = data_type(input(msg))
+*example:
+a = int(input('enter number:))
+-------------------------------------------------------------------------------------------------------------------------
+9. Data types:
+*Data : data is called as information that is collected and stored in the structured manner
+* 2 types of data types:
+i. Primitive data type/primary data type - numeric, string, boolean
+a. Numeric -  integer(whole number(3/4/5)), float(decimal number(3.4/34.5)) ,complex number(3j+5j).
+b. String - a character or a sequence of character enclosed with single or double or triple quote.('q',"q",'''q''').
+c. boolean - true or false.
+
+ii. Non-primitive data type/secondary data type - list, tuple, dictionary ,set.
+-------------------------------------------------------------------------------------------------------------------------
+10. Operators
+*Operators : they are the symbols that perform specific operations.
+*Operands : they are the values on which operation take place.
+
+* three types of operators:
+i. Based on number of operators - unary operator(NOT) , binary operator (AND / OR),ternary operator.
+
+ii. Based on operation - arithmetic operation, Relational operation, logical operation, bitwise operation, assignment operation(short hand assignment operation).
+a. Arithmetic operation : used to perform an arithmetic operations such as addition(+), subtraction(-), multiplication(*), division(/), modulus(%), exponential(**).
+b. Relational operation : use it to compare the two values using ==,!=,<,>,<=,>=.
+c. Logical operation : compare the multiple condition and returns boolean values(true and false) such as AND,OR,NOT.
+d. Bitwise operation : bitwise AND, bitwise OR ,XOR,>>(right shift),<<(left shift), bitwise NOT/tilde.
+e. Assignment operation : assign a value to variable using =.
+f. Shorthand assignment operation : combination of arithmetic operator and assignment operator such as +=,-=,/=,\=.
+
+iii. Special operators - membership operator, identity operator, dot operator, decorating, slicing.
+a. Membership operator : used to check whether the element is member of the collection or not using(in, not in)
+b. Special operators : used to compare the ID of two variables using (is ,is not)
+-------------------------------------------------------------------------------------------------------------------------
+11. Control statements : use it to control the flow of programs.
+* types of contrast statements
+i. If statement : if condition is true respective block of code or a statement is executed.
+ii. If else statement : if condition is false, then else respective block of code or statement is executed.
+iii. Elif statement : it's a form of else if statement
+iv. Nested if statement : it contains if multiple statements inside another if statement.
+v. Match case : 
+vi. Break : it is used to terminate the loop forcefully.
+vii. Continue : it used to skips the current iteration in the loop.
+viii.pass : used it to create a empty block.
+-------------------------------------------------------------------------------------------------------------------------
+12. Looping : used to perform task for a specific number of time or until the condition become false.
+*i.for : executive block of court for a specific number of time.
+----range() : used to iterate specific number of time.
+----variable iteration : used to iterate through collection or non-primitive data types.
+*ii.while : it execute the block of code until the condition get failed.
+-------------------------------------------------------------------------------------------------------------------------
+13. Function: a block of code written for reusability and modularity and it executes when it's called.
+* types of function:
+1. Built-in function - pre-defined functions in python like ,push, pop, append ,copy,etc
+2. User defined function(UDF) - the function which is defined by the user is called as user different function.
+*syntax : def function_name :// function definition
+          //statements
+          function_name() // function calling 
+*type of UDF:
+i.No Arguments, No Return Value. The function performs a fixed task and prints or updates something directly without sending data back.
+  example:
+  def greet():
+      print("Hello, World!")
+
+  greet()
+ii.With Arguments, No Return Value. The function accepts input data to process, but it does not return a result to the caller.
+  example:
+  def greet_user(name):
+      print(f"Hello, {name}!")
+
+  greet_user("Alice")
+iii.No Arguments, With Return Value. The function takes no inputs, generates or fetches a value internally, and sends it back using return.
+  example:
+  def get_pi():
+      return 3.14159
+
+  pi_val = get_pi()
+iv.With Arguments, With Return Value. The function takes input values, processes them, and returns the final result.
+  example:
+  def add(a, b):
+      return a + b
+
+  total = add(5, 3)
+
+3. Miscellaneous function. - storing the id of the function in a variable and accessing it miscellaneous is called as miscellaneous function.
+*syntax:def banana :// function definition
+          //statements
+        apple = function_name() // function storing in variable
+        apple() // calling banana miscellaneous using apple variable 
+4. Anonymous function. - next days
+-------------------------------------------------------------------------------------------------------------------------
+14. 
+*String : character or sequence of character enclosed with single or double or triple quote.
+  example:
+  name = 'kushal'
+*F-strings (formatted string literals) are the modern, recommended way to format strings in Python.
+  example :
+  a=10
+  b=20
+  print(f"a is {a} and b is {b}"). // a is 10 and b is 20
+-------------------------------------------------------------------------------------------------------------------------
