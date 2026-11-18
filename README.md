@@ -6,7 +6,7 @@ My journey to becoming an AI Engineer. Learning in public, one day at a time.
 
 ## Daily Log
 
-### Day 1: Setup + Python core
+### Day 1: Setup + Python core(18 Nov 2026)
 - **Learned:** variables, data types, if/elif/else, loops, functions, f-strings, `input()`
 - **Built:**
   - [FizzBuzz](Day01/fizzbuzz.py)
